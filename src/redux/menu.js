@@ -14,7 +14,7 @@ const menuSlice = createSlice({
          day: 2,
          Breakfast: "Paratha + Channa + Tea",
          Lunch: "Pakora Kari + Pickle + Chapati",
-         Dinner: "Dal Mash", // changed
+         Dinner: "Dal Mash", // updated
       },
       {
          day: 3,
@@ -24,7 +24,7 @@ const menuSlice = createSlice({
       },
       {
          day: 4,
-         Breakfast: "Bread + Jam & Butter + Tea",
+         Breakfast: "French Toast + Tea", // updated
          Lunch: "Aalu Palak + Pickle + Chapati",
          Dinner: "Chicken Biryani + Raita + Cold Drinks",
       },
@@ -32,29 +32,28 @@ const menuSlice = createSlice({
          day: 5,
          Breakfast: "Egg, Tomato, Onion + Paratha + Tea",
          Lunch: "White Rice + Pickle + Dal Masoor",
-         Dinner: "Kofta + Chapati", // changed
+         Dinner: "Kofta + Chapati", // updated
       },
       {
          day: 6,
          Breakfast: "Aalu Paratha + Yogurt + Tea",
          Lunch: "Aalo Gobhi / Bhindi + Pickle + Chapati",
-         Dinner: "Aloo Pulao + Raita", // changed
+         Dinner: "Aloo Pulao + Raita", // updated
       },
       {
          day: 0,
          Breakfast: "Halwa Puri + Channa + Tea",
-         Lunch: "Black Channa + Pickle + Chapati",
-         Dinner: "Biryani", // changed
+         Lunch: "Aloo Salan + Pickle + Chapati", // updated
+         Dinner: "Biryani", // updated
       },
    ],
    reducers: {
       weekChange: (state) => {
-         state[0].Dinner = "Chicken Pulao + Raita";
          state[1].Dinner = "Dal Mash";
-         state[2].Dinner = "Chicken Karahi + Chapati + Sweet Dish";
-         state[3].Dinner = "Chicken Biryani + Raita + Cold Drinks";
+         state[3].Breakfast = "Fresh Toast + Tea";
          state[4].Dinner = "Kofta + Chapati";
          state[5].Dinner = "Aloo Pulao + Raita";
+         state[6].Lunch = "Aloo Salan + Pickle + Chapati";
          state[6].Dinner = "Biryani";
       },
    },
