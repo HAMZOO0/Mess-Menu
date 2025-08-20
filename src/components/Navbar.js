@@ -2,17 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/android-chrome-192x192.png";
 import "../css/navbar.css";
+
 export default function Navbar() {
    return (
       <>
-         <nav className="nav navbar navbar-expand-lg bg-body-tertiary">
-            <div className="container-fluid">
-               <Link to="/">
-                  <img src={logo} alt="logo" height="70px" width="70px" />
-               </Link>
-               <Link className="navbar-brand " to="/">
-                  NUST Balochistan Campus Mess Menu
-               </Link>
+         <nav className="nav navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+            <div className="container-fluid px-3">
+               <div className="d-flex align-items-center">
+                  <Link to="/" className="d-flex align-items-center text-decoration-none">
+                     <img src={logo} alt="NUST logo" height="40px" width="40px" className="me-2" />
+                     <span className="navbar-brand mb-0 h1 text-dark fw-bold">NUST Balochistan Campus Menu</span>
+                  </Link>
+               </div>
+
                <button
                   className="navbar-toggler"
                   type="button"
@@ -24,15 +26,24 @@ export default function Navbar() {
                >
                   <span className="navbar-toggler-icon"></span>
                </button>
+
                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                  <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                      <li className="nav-item">
-                        <Link className="nav-link active hover-underline-animation" aria-current="page" to="/daily">
+                        <Link
+                           className="nav-link active hover-underline-animation px-3"
+                           aria-current="page"
+                           to="/daily"
+                        >
                            Today
                         </Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link active hover-underline-animation" aria-current="page" to="/weekly">
+                        <Link
+                           className="nav-link active hover-underline-animation px-3"
+                           aria-current="page"
+                           to="/weekly"
+                        >
                            This Week
                         </Link>
                      </li>
