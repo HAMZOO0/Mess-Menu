@@ -6,14 +6,14 @@ const menuSlice = createSlice({
    initialState: [
       {
          day: 1,
-         Breakfast: "Omelette + Paratha",
+         Breakfast: "Omelette / Half Fry (1) + Paratha",
          Lunch: "Seasonal Vegetable + Pickle + Chapati",
          Dinner: "Chicken Pulao + Raita",
       },
       {
          day: 2,
          Breakfast: "Paratha + Channa + Tea",
-         Lunch: "Pakora Kari + Pickle + Chapati",
+         Lunch: "Pakora Kari + Rice + Chapati",
          Dinner: "Dal Mash", // updated
       },
       {
